@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>База знаний - домашнее задание</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/choices.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="child child-check">
+      <form class="form-check" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <h3 class="child-check__heading">Категории:</h3>
+        <label class="check-label">
+        <input class="check" type="checkbox" checked name="dinos">
+        <span></span>
+        <span class="check-span">Динозавры</span>
+        </label>
+        <label class="check-label">
+          <input class="check" type="checkbox" name="bears">
+          <span></span>
+          <span class="check-span">Медвели</span>
+        </label>
+        <label class="check-label">
+          <input class="check" type="checkbox" name="roes">
+          <span></span>
+          <span class="check-span">Косули</span>
+        </label>
+        <label class="check-label">
+          <input class="check" type="checkbox" name="foxes">
+          <span></span>
+          <span class="check-span">Лисы</span>
+        </label>
+        <label class="check-label">
+          <input class="check" type="checkbox" name="wolfs">
+          <span></span>
+          <span class="check-span">Волки</span>
+        </label>
+        <label class="check-label">
+          <input class="check" type="checkbox" name="deers">
+          <span></span>
+          <span class="check-span">Олени и лоси</span>
+        </label>
+      </form>
+    </div>
+
+    <div class="child child-select">
+      <select name="select" id="select">
+        <option class="select-item" label="#" value="Материал" selected disabled></option>
+        <option class="select-item" label="#" value="Древесина"></option>
+        <option class="select-item" label="#" value="Металл"></option>
+        <option class="select-item" label="#" value="Камень"></option>
+        <option class="select-item" label="#" value="Пластик"></option>
+        <option class="select-item" label="#" value="Композитный"></option>
+        <option class="select-item" label="#" value="Гипс"></option>
+      </select>
+    </div>
+
+    <div class="child child-map" id="map"></div>
+
+    <div class="child child-simplebar" data-simplebar>
+      Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная
+      концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные
+      особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для
+      первоочередных требований.
+    </div>
+
+    <div class="child child-form">
+      <form action="https://jsonplaceholder.typicode.com/posts" class="form">
+        <div class="just-validate-tooltip-container">
+          <input class="input-form input-form-name" name="Имя" type="text" placeholder="Имя*" data-validate-field="name" id="name">
+        </div>
+
+        <div class="just-validate-tooltip-container">
+          <input class="input-form input-form-tel" name="tel" type="tel" placeholder="Телефон*" data-validate-field="tel" data-validate-rules="phone" id="tel">
+        </div>
+
+        <div class="just-validate-tooltip-container">
+          <input class="input-form input-form-mail" name="Email" type="Email" placeholder="E-mail*" data-validate-field="mail" id="mail">
+        </div>
+
+        <button class="btn">Заказать</button>
+      </form>
+    </div>
+    <div class="child child-tooltip">
+      Следует отметить, что социально&#8209;экономическое развитие способствует повышению качества переосмысления внешнеэкономических&nbsp;политик.
+      <div class="toolbox">
+        <div class="symbol" tabindex="0"></div>
+        <div class="popup">Глава 2, страница 176</div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script src="js/choices.min.js"></script>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/inputmask.min.js"></script>
+  <script src="js/just-validate.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
